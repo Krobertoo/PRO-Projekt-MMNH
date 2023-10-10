@@ -48,7 +48,8 @@ CREATE TABLE `knihy` (
   `ISBN` int(11) NOT NULL,
   `autor_id` int(11) NOT NULL,
   `pocet_stran` int(11) NOT NULL,
-  `zanr` varchar(50) NOT NULL
+  `zanr` varchar(50) NOT NULL,
+  FOREIGN KEY (autor_id) REFERENCES autor(autor_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -61,7 +62,9 @@ CREATE TABLE `ukazky` (
   `ukazky_id` int(11) NOT NULL,
   `uziv_id` int(11) NOT NULL,
   `datum_add` date NOT NULL,
-  `knihy_id` int(11) NOT NULL
+  `knihy_id` int(11) NOT NULL,
+  FOREIGN KEY (uziv_id) REFERENCES uzivatel(uziv_id),
+  FOREIGN KEY (knihy_id) REFERENCES knihy(knihy_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -98,7 +101,7 @@ ALTER TABLE `knihy`
 -- Klíče pro tabulku `ukazky`
 --
 ALTER TABLE `ukazky`
-  ADD PRIMARY KEY (`ukazky_id`);
+  ADD PRIMARY KEY (`ukazky_id`)
 
 --
 -- Klíče pro tabulku `uzivatel`
