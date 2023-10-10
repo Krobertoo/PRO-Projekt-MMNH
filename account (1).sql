@@ -101,7 +101,7 @@ ALTER TABLE `knihy`
 -- Klíče pro tabulku `ukazky`
 --
 ALTER TABLE `ukazky`
-  ADD PRIMARY KEY (`ukazky_id`)
+  ADD PRIMARY KEY (`ukazky_id`);
 
 --
 -- Klíče pro tabulku `uzivatel`
