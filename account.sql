@@ -34,6 +34,8 @@ CREATE TABLE `autor` (
   `prezdivka` varchar(50) NOT NULL,
   `narozeni` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+INSERT INTO autor (jmeno,prezdivka,narozeni)
+  VALUES ();
 
 -- --------------------------------------------------------
 
@@ -51,6 +53,8 @@ CREATE TABLE `knihy` (
   `zanr` varchar(50) NOT NULL,
   FOREIGN KEY (autor_id) REFERENCES autor(autor_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
+  VALUES () ;
 
 -- --------------------------------------------------------
 
@@ -66,6 +70,8 @@ CREATE TABLE `ukazky` (
   FOREIGN KEY (uziv_id) REFERENCES uzivatel(uziv_id),
   FOREIGN KEY (knihy_id) REFERENCES knihy(knihy_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+INSERT INTO ukazky (uziv_id,datum_add,knihy_id)
+  VALUES ();
 
 -- --------------------------------------------------------
 
@@ -79,7 +85,8 @@ CREATE TABLE `uzivatel` (
   `prezdivka` varchar(50) NOT NULL,
   `narozeni` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
+INSERT INTO uzivatel (jmeno,prezdivka,narozeni)
+  VALUES ();
 --
 -- Klíče pro exportované tabulky
 --
