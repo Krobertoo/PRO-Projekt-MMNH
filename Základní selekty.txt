@@ -1,0 +1,163 @@
+
+(Where)
+
+SELECT * FROM autor   Vyberte všechny autory s jménem Karel:
+WHERE jmeno='Karel';
+
+SELECT * FROM autor   Vyberte všechny autory s ID větším než 80:
+WHERE autorid > 80;
+
+(Order by)
+
+SELECT * FROM autor   Seřaďí autory podle autorid:
+ORDER BY autorid;
+
+SELECT * FROM autor   Seřaďí jmena od nejvyšší po nejnižší (Z-A):
+ORDER BY jmeno DESC;
+
+SELECT * FROM autor
+ORDER BY jmeno, prezdivka; 
+
+Seřaďí autory podle jména a pokud mají více autorů stejná jména seřadí je podle přezdívky
+
+(AND/OR)
+
+SELECT * FROM autro
+WHERE jemno = 'Karel' AND prezdivka LIKE 'g%';  
+
+Vyberte všechny jmena s jménem Karel, a přezdívka  začíná na písmeno "G":
+
+SELECT * FROM autro
+WHERE jemno = 'Karel' OR Jmeno = 'Pavel';
+
+Vyberte všechny jmena s jménem Karel nebo Pavel
+
+SELECT * FROM autro
+WHERE jemno = 'Karel' AND (prezdivka LIKE 'G%' OR prezdivka LIKE 'R%');
+
+Vyberte všechny autory Karel, kteřá přezdívka začínají na "G" nebo "R":
+
+SELECT * FROM autro
+WHERE jemno = 'Karel' AND prezdivka LIKE 'G%' OR prezdivka LIKE 'R%';
+
+Vyberte všechny autory,  kteřá přezdívka začínají na "G", nebo začíná písmenem "R":
+
+(group by)
+
+SELECT COUNT(autorid), jmeno  uvádí počet autorů podle jmen:
+FROM autor
+GROUP BY jmeno;
+
+SELECT COUNT(autorid), jmeno  
+FROM autor
+GROUP BY jmeno
+ORDER BY COUNT(autorid) DESC;
+
+ uvádí počet jmen v autorech seřazený od nejvyššího po nejnižší:
+
+(like)
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'a%';   jmena začínají na a
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'K_ar__'; 
+
+Vrátí všechny autory, které začíná písmenem 'K', za kterým následuje jeden zástupný znak, pak 'ar' a pak dva zástupné znaky:
+
+SELECT * FROM autor
+WHERE jmeno LIKE '%K%'; jmena které obsahuje písmeno "K":
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'Ka%';   jmena kteří začínají na 'Ka':
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'a%' OR jmeno LIKE 'b%';  
+
+Jmena kteří začínají na 'a' nebo začínají na 'b':
+
+SELECT * FROM autor
+WHERE jmeno LIKE '%a';  jmena kteří končí na 'a':
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'k%l'; jmena kteří začínají na "k" a končí na "l":
+
+SELECT * FROM autor
+WHERE jmeno LIKE '%rl%'; Vrátit všechny jmena, kteří obsahují výraz "rl".
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'a__%';
+
+Vrátit všechny jmena, kteří začínají na "a" a mají délku alespoň 3 znaky.
+
+SELECT * FROM autor
+WHERE jmeno LIKE '_r%'; 
+
+Vrátit všechny jmena, kteří mají na druhé pozici znak "r":
+
+SELECT * FROM autor
+WHERE jmeno LIKE 'Karel';
+
+Vrátit všechny autory s jménem Karel:
+
+(In)
+
+SELECT * FROM autor
+WHERE jmeno IN ('Karel', 'Jozef', 'Petr');
+
+SELECT * FROM autor
+WHERE jmeno NOT IN ('Karel', 'Jozef', 'Petr');
+
+SELECT * FROM autor
+WHERE autorid IN (SELECT autorid FROM jmeno);
+
+SELECT * FROM autor
+WHERE autorid NOT IN (SELECT autorid FROM jmeno);
+
+(BETWEEN)
+
+SELECT * FROM autor
+WHERE narozeni BETWEEN 1980 AND 2000;
+
+SELECT * FROM autor
+WHERE narozeni NOT BETWEEN 1980 AND 2000;
+
+SELECT * FROM autor
+WHERE narozeni BETWEEN 1980 AND 2000
+AND autorid IN (1,2,3);
+
+SELECT * FROM autor
+WHERE jmeno BETWEEN 'Karel Čapek' AND 'Božena Němcová'
+ORDER BY jmeno;
+
+SELECT * FROM autor
+WHERE jmeno NOT BETWEEN 'Karel Čapek' AND 'Božena Němcová'
+ORDER BY jmeno;
+
+SELECT * FROM autor
+WHERE narozeni BETWEEN '1996-07-01' AND '1996-07-31';
+
+(LIMIT)
+
+SELECT * FROM autor
+ORDER BY jmeno
+LIMIT 10;
+
+SELECT * FROM autor
+ORDER BY jmeno DESC
+LIMIT 10;
+
+(WILDCARDS)
+
+SELECT * FROM autor
+WHERE jmeno LIKE '[bsp]%';
+
+SELECT * FROM autor
+WHERE jmeno LIKE '[a-d]%';
+
+
+
+
+
+
+
