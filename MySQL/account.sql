@@ -59,9 +59,13 @@ COMMIT;
 
 
 INSERT INTO autor (jmeno,narozeni)
-  VALUES ('Viktor Dyk','1877');
+  VALUES 
+  ('Viktor Dyk','1877'),
+  ('Agatha Christie','1890');
 INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
-  VALUES ('Krysař','1998','978-1234567890','1','320','Román');
+  VALUES 
+  ('Krysař','1998','978-1234567890','1','320','Román'),
+  ('Vraždy na postranní koleji','2000','978-2345678901','2','400','Krimi');
 INSERT INTO ukazky (uziv_id,datum_add,knihy_id)
   VALUES ();
 INSERT INTO uzivatel (jmeno,prezdivka,narozeni)
