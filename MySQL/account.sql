@@ -63,7 +63,7 @@ INSERT INTO autor (jmeno,narozeni)
   ('Viktor Dyk','1877'),
   ('Agatha Christie','1890'),
   ('Arthur C. Clarke','1917'),
-  ('J.R.R. Tolkien','1892'),
+  ('J.R.R. Tolkien','1892');
 INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
   VALUES 
   ('Krysař','1998','978-1234567890','1','320','Román'),
