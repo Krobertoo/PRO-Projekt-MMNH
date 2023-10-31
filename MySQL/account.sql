@@ -61,7 +61,7 @@ COMMIT;
 INSERT INTO autor (jmeno,prezdivka,narozeni)
   VALUES ();
 INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
-  VALUES () ;
+  VALUES ();
 INSERT INTO ukazky (uziv_id,datum_add,knihy_id)
   VALUES ();
 INSERT INTO uzivatel (jmeno,prezdivka,narozeni)
