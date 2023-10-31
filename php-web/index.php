@@ -12,10 +12,10 @@
     </body>
     
     <?php
-        $servername = "sql203.epizy.com";
-        $username = "epiz_33059265";
-        $password = "PvHcyla59S0";
-        $dbname = "epiz_33059265_12";
+        $servername = "sql303.infinityfree.com";
+        $username = "if0_35293337";
+        $password = "2LnlAsGcqtHwV";
+        $dbname = "if0_35293337_kniznik";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password);
