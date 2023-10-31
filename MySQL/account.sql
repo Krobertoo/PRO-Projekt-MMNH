@@ -1,7 +1,7 @@
 CREATE TABLE `autor` (
   `autor_id` int(11) NOT NULL,
   `jmeno` varchar(50) NOT NULL,
-  `prezdivka` varchar(50) NOT NULL,
+  `prezdivka` varchar(50),
   `narozeni` date NOT NULL
 ) 
 
@@ -58,10 +58,10 @@ ALTER TABLE `uzivatel`
 COMMIT;
 
 
-INSERT INTO autor (jmeno,prezdivka,narozeni)
-  VALUES ();
+INSERT INTO autor (jmeno,narozeni)
+  VALUES ('Viktor Dyk','1877');
 INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
-  VALUES ();
+  VALUES ('Krysař','1998','978-1234567890','1','320','Román');
 INSERT INTO ukazky (uziv_id,datum_add,knihy_id)
   VALUES ();
 INSERT INTO uzivatel (jmeno,prezdivka,narozeni)
