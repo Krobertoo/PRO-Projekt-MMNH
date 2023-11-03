@@ -17,3 +17,39 @@
     max-width: 100%;
     height: auto;
   }
+
+.topnav {
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: whitesmoke;
+  color: #04AA6D;
+}
+
+.topnav a.active {
+  background-color: whitesmoke;
+  color: #04AA6D;
+  font-size: 24px;
+}  
+
+.topnav a.autori {
+  float: right;
+} 
+.topnav a.tym {
+  float: right;
+}  
+.topnav a.knizky {
+  float: right;
+}  
+ 
