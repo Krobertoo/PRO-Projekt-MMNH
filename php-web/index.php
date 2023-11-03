@@ -1,21 +1,26 @@
 <html>
     <head>
-    <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://kappa.lol/QSbKC">
-    <title>Knižní databáze</title>
+      <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="https://kappa.lol/QSbKC">
+      <title>Knižní databáze</title>
     </head>
     <body>
-      <link rel="stylesheet" href="style.css">
-    <h1><b>Knižní databáze</b></h1>
-    <p>Funkce. Stanislav Hrdý. Přerušení provozování min. jedné z živností. 65019989. Veselí nad Lužnicí - Horusice 43, PSČ 391 81. Podnikatel. -. Stanislav Hrdý.</p>
-    </body>
+      <div class="topnav">
+        <a class="active" href="index.php">Knižník</a>
+        <a class = "tym" href="">Tým</a>
+        <a class = "autori" href="">Autoři</a>
+        <a class = "knizky" href="knizky.html">Knížky</a>
+      </div>
+      <h1><b>Knižní databáze</b></h1>
+      <p>Funkce. Stanislav Hrdý. Přerušení provozování min. jedné z živností. 65019989. Veselí nad Lužnicí - Horusice 43, PSČ 391 81. Podnikatel. -. Stanislav Hrdý.</p>
+    </body>    
     
     <?php
-        $servername = "sql303.infinityfree.com";
-        $username = "if0_35293337";
-        $password = "2LnlAsGcqtHwV";
-        $dbname = "if0_35293337_kniznik";
+        $servername = "sql203.epizy.com";
+        $username = "epiz_33059265";
+        $password = "PvHcyla59S0";
+        $dbname = "epiz_33059265_12";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password);
