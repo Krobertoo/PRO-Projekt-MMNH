@@ -157,7 +157,17 @@ WHERE jmeno LIKE '[a-d]%';
 
 
 
+Z dvou tabulek a více tabulek:
 
+SELECT autor.jmeno, knihy.nazev
+FROM autor
+INNER JOIN knihy ON autor.autor_id = knihy.autor_id;
 
+SELECT autor.jmeno, knihy.nazev, ukazka.datum
+FROM autor
+INNER JOIN knihy ON autor.autor_id = knihy.autor_id
+INNER JOIN ukazka ON knihy.knihy_id = ukazka.knihy_id;
 
-
+SELECT autor.jméno, autor.přezdívka, knihy.název
+FROM autor
+INNER JOIN knihy ON autor.autor_id = knihy.autor_id;
