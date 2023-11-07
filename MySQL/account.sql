@@ -81,7 +81,7 @@ INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
   VALUES 
   ('Krysař','1998','978-1234567890',1,'320','Román'),
   ('Vraždy na postranní koleji','2000','978-2345678901',2,'400','Krimi'),
-  ('Vesmírná odysea','1968','978-3456789012,3,'350','Sci-fi'),
+  ('Vesmírná odysea','1968','978-3456789012',3,'350','Sci-fi'),
   ('Pán prstenů: Společenstvo prstenu','1954','978-4567890123,4,'450','Fantasy'),
   ('Záhadný písař','1950','978-5678901234,2,'280','Krimi'),
   ('1984','1949','978-6789012345',5,'328','Dystopie'),
