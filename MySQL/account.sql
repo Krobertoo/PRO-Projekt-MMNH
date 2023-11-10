@@ -57,7 +57,6 @@ ALTER TABLE `uzivatel`
   MODIFY `uziv_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-
 INSERT INTO autor (jmeno,narozeni)
   VALUES 
   ('Viktor Dyk','1877'),
@@ -77,6 +76,7 @@ INSERT INTO autor (jmeno,narozeni)
   ('Karel Čapek','1890'),
   ('Franz Kafka','1883'),
   ('Mark Twain','1835');
+
 INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
   VALUES 
   ('Krysař','1998','978-1234567890',1,'320','Román'),
@@ -98,7 +98,9 @@ INSERT INTO knihy (nazev,vydani,ISBN,autor_id,pocet_stran,zanr)
   ('Proměna','1915','978-7890123456',16,'55','Existencialismus'),
   ('Láska v době cholery','1985','978-8901234567',13,'368','Magický realismus'),
   ('Dobrodružství Toma Sawyera','1876','978-9012345678',17,'220','Dobrodružný roman');
+
 INSERT INTO ukazky (uziv_id,datum_add,knihy_id)
   VALUES ();
+
 INSERT INTO uzivatel (jmeno,prezdivka,narozeni)
   VALUES ()
