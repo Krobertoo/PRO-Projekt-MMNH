@@ -1,1 +1,11 @@
-
+h1 {
+    color: aqua;
+    font-family: verdana;
+    font-size: 600%;
+    text-align: center;
+  }
+p {
+    color: black;
+    font-family: courier;
+    font-size: 250%;
+  }
