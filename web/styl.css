@@ -1,0 +1,301 @@
+body {
+  background-color: rgb(85, 85, 85);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.title_pics {
+   display: none;
+  }
+.topnav {
+    margin: 10;
+    font-size: 1em;
+
+}
+.nadpis {
+    margin: 10;
+    font-size: 1em;
+    position: absolute;
+    display: flex;
+    float: left;
+
+
+}
+.welcome {
+    font-size: 0.5em;
+
+
+}
+
+}
+
+.nadpis {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  border-radius: 15px;
+  box-shadow: 0 9px #b1b0ad;
+  margin: 0 700 0 700;
+  margin-bottom: 60px;
+  margin-top: 30px;
+
+}
+
+.text_kniha { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  margin: 10px auto;
+}
+
+.welcome{
+  padding: 14px 30px;
+  font-size: 1.5em;
+  background: #cccbc7;
+  position: absolute;
+  bottom: 10;
+  margin-left: 70;
+  margin-right: 70;
+   width: auto;
+   height: auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #7b7b7b;
+  border-radius: 20px;
+  margin-left: 70;
+  margin-right: 70;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+   padding: 14px 2vw;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.topnav img {
+  float: left;
+ padding: 14px 1vw;
+  max-width: 100%;
+  height: auto;
+
+}
+.topnav a:hover {
+  color: #3d6657;
+}
+
+.topnav a.active {
+  float: left;
+  color: white;
+}  
+
+.topnav a.autori {
+  float: right;
+  color: white;
+} 
+.topnav a.tym {
+  float: right;
+  color: white;
+}  
+.topnav a.knizky {
+  float: right;
+  color: white;
+}
+
+.topnav img {
+  float: left;
+  width: 35px;
+  height: 35px;
+
+}
+
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50;
+}
+
+.member {
+  margin: 5px;
+  padding: 15px;
+  background-color: #cccbc7;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  text-align: center;
+  width: 700;
+  height: 200;
+  margin-left: 70;
+  margin-right: 70;
+}
+
+.title_pics img {
+width: 350;
+height: 500;
+}
+
+
+
+.title_pics img.o1 {
+float: left;
+margin-left: 70;
+}
+
+.title_pics img.o2 {
+  float: right;
+  margin-right: 70;
+  
+  
+  }
+
+.team {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-left: 600;
+  margin-right: 600;
+
+
+
+}
+
+
+.member img {
+width: 170;
+height: 200;
+float: left;
+
+}
+
+.bar input {
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 600;
+  margin-right: 600;
+
+
+
+}
+.abeceda a {
+text-decoration: none;
+color: black;
+
+
+}
+
+.abeceda a:hover{
+color: rgb(255, 0, 0);
+
+
+}
+
+
+.abeceda a:visited{
+color: rgb(0, 0, 0);
+
+
+}
+
+.aut {
+    margin-top: 100px;
+    background-color: #cccbc7;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400;
+    margin-right: 400;
+
+}
+.abeceda {
+background-color: #cccbc7;
+
+
+
+padding: 15px;
+text-align: center;
+width: auto;
+height: auto;
+margin-right: 700px;
+margin-left: 700px;
+}
+.search {
+background-color: #cccbc7;
+padding: 15px;
+text-align: center;
+margin-right: 700px;
+margin-left: 700px;
+justify-items: center;
+
+}
+
+.aut a:hover {
+    color: blue;
+      text-decoration: none;
+
+
+}
+.aut-6 a:active {
+    color: black;
+      text-decoration: none;
+
+
+
+}
+
+.sql {
+    font-size: 1.5em;
+    display: flex;
+    background-color: #999999;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    margin-right: 700px;
+    margin-left: 700px;
+    text-decoration: none;
+    color: black;
+
+
+}
+.sql a {
+  text-decoration: none;
+  color:black;
+}
+.sql a:hover {
+  color: #ff0000;
+}
+
+.sql a:visited {
+color: black;
+
+
+
+}
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
