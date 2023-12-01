@@ -20,7 +20,7 @@
 
 <div class="topnav">
 
-        <img src="logo3.png">
+        <a class="logo" href="index.html"><img src="logo3.png"></a>
 
         <a class="active" href="index.html">Knižník</a>
 
@@ -47,6 +47,7 @@
         <input type="text" name="search" id="search">
 
         <input type="submit" value="Search">
+        <button type="button" onclick="window.history.back();">Zpět</button>
 
       
 

@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="styl.css">
 <link rel="icon" href="logo3.png">
 
-<title>Knížka</title>
+<title>Autor</title>
 
 
 
@@ -17,7 +17,7 @@
 
 <div class="topnav">
 
-        <img src="logo3.png">
+      <a class="logo" href="index.html"><img src="logo3.png"></a>
 
         <a class="active" href="index.html">Knižník</a>
 
@@ -28,8 +28,8 @@
         <a class = "knizky" href="knizky.php">Knížky</a>
 
 </div>
-<div class="nadpis">Knižní databáze</div>
-<div class="text_kniha">
+<div class="nadpis">Autor</div>
+<div class="autor">
 
 <?php
     $servername = "sql303.infinityfree.com";
@@ -39,8 +39,6 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
     $itemId = $_GET['id'];
-
-    // Assuming you have a database connection established
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -55,8 +53,18 @@
 
     }
 
-    // Fetch item details based on the ID
-    $sql = "SELECT * FROM autor WHERE autor_id = $itemId";
+
+if ($itemId) {
+    $photo_path = "Fotky/{$itemId}.jpg"; 
+
+    
+    if (file_exists($photo_path)) {
+       
+        echo "<img src='{$photo_path}' alt='Fotka autora'>";
+
+   }
+ 
+$sql = "SELECT * FROM autor WHERE autor_id = $itemId";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -64,9 +72,9 @@
         echo "<p><strong>Jméno:</strong> {$row['jmeno']}</p>";
         echo "<p><strong>Narození:</strong> {$row['narozeni']}</p>";
     } else {
-        echo "Item not found.";
+        echo "Autor nenalezen.";
     }
-
+ }
     $conn->close();
     ?>
 </div>

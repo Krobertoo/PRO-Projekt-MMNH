@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="topnav">
-        <img src="logo3.png">
+        <a class="logo" href="index.html"><img src="logo3.png"></a>
         <a class="active" href="index.html">Knižník</a>
         <a class = "tym" href="tym.html">Tým</a>
         <a class = "autori" href="autori.php">Autoři</a>
@@ -50,7 +50,6 @@
 
     if ($conn->connect_error) {
         echo "Spojení se nezdařilo";
-        //exit("Spojení se nezdařilo. Chyba: " . $conn->connect_error);
     }
     $conn->set_charset("utf8mb4");
         $sql = "SELECT * FROM knihy ORDER BY nazev ASC";
