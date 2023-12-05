@@ -46,7 +46,6 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->set_charset("utf8mb4") === false) {
