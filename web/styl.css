@@ -364,11 +364,15 @@ margin: 0 auto;
     height: 23.7%;
     margin: auto;
     margin-bottom: 10;
+    content: "";
+  clear: both;
 
 }
 .member img {
 display: block;
 margin: auto;
+height: 25vh;
+    width: 100%;
 
 }
 .search {
@@ -385,16 +389,19 @@ width: 50%;
     height: 23.7%;
     margin: auto;
     margin-bottom: 10;
+    content: "";
+  clear: both;
 
 }
 .autor{
  display: block;
     text-align: left;
     width:42.5%;
-    height: 40%;
+    height: auto;
     margin: auto;
     content: "";
   clear: both;
+  margin-bottom: 10;
 }
 .autor img{
     height: 25vh;
@@ -409,3 +416,4 @@ width: 50%;
 
 }
 }
+

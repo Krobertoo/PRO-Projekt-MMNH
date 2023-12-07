@@ -71,6 +71,7 @@ $sql = "SELECT * FROM autor WHERE autor_id = $itemId";
         $row = $result->fetch_assoc();
         echo "<p><strong>Jméno:</strong> {$row['jmeno']}</p>";
         echo "<p><strong>Narození:</strong> {$row['narozeni']}</p>";
+        echo "<p><strong>Životopis:</strong> {$row['text']}</p>";
     } else {
         echo "Autor nenalezen.";
     }
