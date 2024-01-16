@@ -40,7 +40,7 @@
         <a href="http://kniznik.infinityfreeapp.com/knizka.php?id=37"> <img class="o2" src="https://cdn.discordapp.com/attachments/756528412801237143/1170055521177452634/r-u-r-9788073900625.jpg?ex=6557a61e&is=6545311e&hm=a4559d6004753ab094435913fb89985fe335dd01aafc592ddb94572db185dbfd&"></a>
     </div>
 
-    <div class="welcome">Vítejte v naší rozsáhlé knižní databázi, kde dobrodružství začíná na každé stránce. Objevte nekonečný svět literatury a ponořte se do fascinujících příběhů, které rozšíří vaše hranice myšlení a přenesou vás do jiných dimenzí. V naší knižní databázi neexistuje omezení, jen vaše vlastní zvědavost a touha objevovat. Bez ohledu na to, zda jste vášnivým čtenářem, studentem hledajícím informace nebo jen dobrodruhem hledajícím nové inspirace, zde máte možnost najít to, co hledáte.</div>
+    <div class="welcome">Vítejte v naší rozsáhlé knižní databázi, kde dobrodružství začíná na každé stránce. Objevte nekonečný svět literatury a ponořte se do fascinujících příběhů, které rozšíří vaše hranice myšlení a přenesou vás do jiných dimenzí. V naší knižní databázi neexistuje omezení, jen vaše vlastní zvědavost a touha objevovat. Bez ohledu na to, zda jste vášnivým čtenářem, studentem hledajícím informace nebo jen dobrodruhem hledajícím nové inspirace, zde máte možnost najít to, co hledáte. Můžete si prohlédnout seznam knih a informace o každé knize na "Knížky", seznam autorů na "Autoři", pokud se zajímáte o náš tým, můžete se dozvědět více na "Tým". Pokud si chcete přidat knihu do oblíbených musíte si založit učet na "Registrace", pokud již účet máte, stačí se odkázat na "Přihlášení".</div>
 
 </body>
 
