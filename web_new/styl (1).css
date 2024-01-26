@@ -1,0 +1,536 @@
+body {
+  background-color: rgb(85, 85, 85);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+
+.nadpis {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  border-radius: 15px;
+  box-shadow: 0 9px #b1b0ad;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 30px;
+width: 25%;
+}
+
+.text_kniha { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  margin-top: 70;
+    margin-left: 500;
+    margin-right: 500;
+    border: 2px solid #333; 
+    border-radius: 16px;
+    }
+
+
+
+.text_kniha a  {
+      text-decoration: none;
+       color: black;
+}
+.text_kniha a:visited  {
+      text-decoration: none;
+     color: black;
+}
+.text_kniha a:active  {
+      text-decoration: none;
+     color: black;
+}
+.text_kniha a:hover  {
+      text-decoration: none;
+     color: red;
+}
+
+
+
+
+.welcome{
+    display: flex;
+  padding: 14px 30px;
+  font-size: 1.5em;
+  background: #cccbc7;
+  position: relative;
+ 
+  top: 15%;
+  margin: auto;
+   width: 85%; 
+   margin-top: 15vh;
+}
+
+
+.topnav {
+    overflow: hidden;
+  background-color: #7b7b7b;
+  border-radius: 20px;
+  margin-left: 70;
+  margin-right: 70;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+   padding: 14px 2vw;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+
+
+.topnav a.active {
+  float: left;
+  color: white;
+}  
+
+.topnav a.autori {
+  float: right;
+  color: white;
+} 
+.topnav a.tym {
+  float: right;
+  color: white;
+}  
+.topnav a.knizky {
+  float: right;
+  color: white;
+}
+
+.topnav a.login {
+  float: right;
+  color: white;
+}
+
+.topnav a.register {
+  float: right;
+  color: white;
+}
+.register_panel input {
+    width: 20em;
+    justify-content: center;
+    } 
+    .login_panel input {
+    width: 20em;
+    justify-content: center;
+    } 
+
+.login_panel {
+ font-size: 1.5em;
+    display: flex;
+     flex-direction: column;
+    background-color: #999999;
+    padding: 15px;
+    margin:auto;
+    color: black;
+    width: 25%;
+    content: "";
+  clear: both;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+.register_link {
+    display: flex;
+text-align: left;
+}
+.register_panel form {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+    justify-content: center;
+width: 20em;
+
+
+}
+.login_panel form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register_panel a {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_panel a {
+  display: flex;
+  flex-direction: column;
+}
+.register_panel {
+    font-size: 1.5em;
+    display: flex;
+     flex-direction: column;
+    background-color: #999999;
+    padding: 15px;
+    margin:auto;
+    color: black;
+    width: 25%;
+    content: "";
+  clear: both;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+
+}
+.register_panel button {
+    width: 20em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50;
+}
+
+.member {
+  padding: 15px;
+  background-color: #cccbc7;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  text-align: center;
+  width: 700;
+  height: 200;
+  margin-left: 70;
+  margin-right: 70;
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 10;
+}
+.title_pics {
+    
+  width: 100%;
+height: 25em;
+
+}
+.title_pics img {
+width: 18em;
+height: 25em;
+}
+
+
+
+.title_pics img.o1 {
+float: left;
+margin-left: 7vw;
+}
+
+.title_pics img.o2 {
+  float: right;
+  margin-right: 7vw;
+  
+  
+  }
+
+.team {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-left: 600;
+  margin-right: 600;
+
+
+
+}
+
+
+.member img {
+width: 170;
+height: 200;
+float: left;
+
+}
+
+.bar input {
+  padding: 14px 20px;
+  background-color: #cccbc7;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 600;
+  margin-right: 600;
+
+
+
+}
+.abeceda a {
+text-decoration: none;
+color: black;
+
+
+}
+.abeceda a:hover{
+color: rgb(255, 0, 0);
+
+
+}
+
+
+.abeceda a:visited{
+color: rgb(0, 0, 0);
+
+
+}
+.abeceda a:hover:visited{
+color: rgb(255, 0, 0);
+}
+.abeceda {
+background-color: #cccbc7;
+margin:auto;
+    color: black;
+    width: 25%;
+
+
+
+padding: 15px;
+text-align: center;
+height: auto;
+}
+.search {
+background-color: #cccbc7;
+padding: 15px;
+text-align: center;
+margin-right: 700px;
+margin-left: 700px;
+justify-items: center;
+margin:auto;
+width: 25%;
+
+}
+
+
+
+
+.sql {
+    font-size: 1.5em;
+    display: flex;
+    background-color: #999999;
+    padding: 15px;
+    margin:auto;
+    color: black;
+    width: 25%;
+    content: "";
+  clear: both;
+
+
+}
+.sql a {
+  text-decoration: none;
+  color:black;
+}
+.sql a:hover {
+  color: #ff0000;
+}
+
+.sql a:visited {
+color: black;
+
+
+
+}
+.sql a:hover:visited {
+  color: #ff0000;
+}
+
+
+
+
+.autor  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 14px 20px;
+    background-color: #cccbc7;
+    margin-top: 70 ;
+    margin-left: 600;
+    margin-right: 600;
+    border: 2px solid #333; 
+    border-radius: 16px;
+
+}
+
+.autor img {
+    width: 15em;
+    height: 20em;
+    border: 2px solid #333; 
+    border-radius: 8px;
+          
+          
+    }
+
+.topnav a.logo img{
+    padding: 0 0;
+    float: left;
+max-width: 100%;
+  width: 3em;
+  height: 3em;
+  font-size: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+body {
+   font-size: 3vw; 
+
+}
+.title_pics{
+height: 30vh;
+
+}
+.title_pics img{
+  width: 40vw;
+  height: 30vh;
+  margin: auto;
+  }
+
+ .welcome {
+font-size: 4vw;
+display: block;
+  padding: 14px 30px;
+  background: #cccbc7;
+  position: relative;
+  top: auto;
+ margin: auto;
+ bottom: -12vh;
+
+}
+.nadpis {
+    font-size: 5vw;
+    content: "";
+  clear: both;
+}
+.topnav {
+    display: block;
+    margin:auto;
+}
+.topnav a {
+display: block;
+margin: 0 auto;
+
+}
+.member {
+    display: block;
+    text-align: left;
+    width:42.5%;
+    height: 23.7%;
+    margin: auto;
+    margin-bottom: 10;
+    content: "";
+  clear: both;
+
+}
+.member img {
+display: block;
+margin: auto;
+height: 25vh;
+    width: 100%;
+
+}
+.search {
+width: 50%;
+
+}
+.sql {
+    width: 50%;
+}
+.text_kniha{
+  display: block;
+    text-align: left;
+    width:42.5%;
+    height: auto;
+    margin: auto;
+    content: "";
+  clear: both;
+  margin-bottom: 10;
+}
+.autor{
+ display: block;
+    text-align: left;
+    width:42.5%;
+    height: auto;
+    margin: auto;
+    content: "";
+  clear: both;
+  margin-bottom: 10;
+}
+.autor img{
+    height: 25vh;
+    width: 100%;
+    display: block;
+margin: auto;
+
+
+}
+.abeceda {
+width: 50%;
+
+}
+
+.register_panel{
+  display: block;
+    text-align: left;
+     width:42vw;
+    height: auto;
+    margin: auto;
+    content: "";
+  clear: both;
+  margin-bottom: 10;
+}
+
+.login_panel{
+ display: block;
+    text-align: left;
+    width:42vw;
+    height: auto;
+    margin: auto;
+    content: "";
+  clear: both;
+  margin-bottom: 10;
+}
+.login_panel input {
+    width: 42vw;
+
+  }
+.register_panel input {
+     width:42vw;
+   
+  }
+.register_panel button {
+     width:42vw;
+}
+
+.text_kniha input {
+     width:42vw;
+}
+.text_kniha label {
+     width:42vw;
+}
+}
+
